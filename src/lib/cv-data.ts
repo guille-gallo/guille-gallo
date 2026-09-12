@@ -49,7 +49,7 @@ export const cvData: CVData = {
   title: "Senior Software Developer",
   email: "guille.gallo88@gmail.com", // Update with your email
   location: "Barcelona, Spain",
-  bio: "I love what I do, I feel extremely fortunate about the fact that my job is one of the awesome things in my life. Welcome to my personal website.",
+  bio: "Welcome to my personal website.",
   linkedin: "https://www.linkedin.com/in/guillermo-gallo-79481751/", // Update or remove
   github: "https://github.com/guille-gallo",
   website: "https://guille-gallo-github-io.vercel.app",

@@ -35,7 +35,7 @@ export default function HomePage() {
       {/* Featured Projects */}
       <Suspense>
         <Show when={(featuredProjects()?.length ?? 0) > 0}>
-          <section class="mx-auto max-w-3xl">
+          <section>
             <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
               <div class="flex items-center gap-2">
                 <h2 class="text-2xl font-bold text-slate-900">

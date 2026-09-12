@@ -10,10 +10,13 @@ interface FeaturedProjectsCarouselProps {
 
 export function FeaturedProjectsCarousel(props: FeaturedProjectsCarouselProps) {
   let scrollRef: HTMLDivElement | undefined;
-  const scrollAmount = 320; // px to move per arrow click
+  const gap = 16; // matches gap-4
 
-  const scrollBy = (delta: number) => {
-    scrollRef?.scrollBy({ left: delta, behavior: "smooth" });
+  // Scroll by exactly one card so the snap points line up after each click
+  const scrollBy = (direction: 1 | -1) => {
+    const card = scrollRef?.firstElementChild as HTMLElement | null;
+    const amount = (card?.offsetWidth ?? 320) + gap;
+    scrollRef?.scrollBy({ left: direction * amount, behavior: "smooth" });
   };
 
   return (
@@ -25,7 +28,7 @@ export function FeaturedProjectsCarousel(props: FeaturedProjectsCarouselProps) {
       >
         <For each={props.projects}>
           {(project, index) => (
-            <div class="snap-start shrink-0 basis-72 sm:basis-80">
+            <div class="snap-start shrink-0 basis-72 sm:basis-80 lg:basis-[calc((100%-2rem)/3)]">
               <ProjectCard project={project} index={index()} />
             </div>
           )}
@@ -35,7 +38,7 @@ export function FeaturedProjectsCarousel(props: FeaturedProjectsCarouselProps) {
       <div class="mt-2 flex items-center justify-center gap-3">
         <button
           type="button"
-          onClick={() => scrollBy(-scrollAmount)}
+          onClick={() => scrollBy(-1)}
           class="glass-panel cursor-pointer rounded-full p-3 text-slate-700 transition"
           aria-label="Scroll left"
         >
@@ -43,7 +46,7 @@ export function FeaturedProjectsCarousel(props: FeaturedProjectsCarouselProps) {
         </button>
         <button
           type="button"
-          onClick={() => scrollBy(scrollAmount)}
+          onClick={() => scrollBy(1)}
           class="glass-panel cursor-pointer rounded-full p-3 text-slate-700 transition"
           aria-label="Scroll right"
         >
