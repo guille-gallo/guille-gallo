@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <div class="mx-auto max-w-5xl px-4 pt-8 pb-16 sm:px-6 sm:pt-10 sm:pb-24">
       {/* Intro Section */}
-      <section class="mb-12 px-6 pb-12 pt-4 text-center sm:px-10 sm:pb-16 sm:pt-6">
+      <section class="mb-6 px-6 pb-6 pt-4 text-center sm:px-10 sm:pb-8 sm:pt-6">
         <h1 class="mb-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{cvData.name}</h1>
         <p class="mb-6 text-xl text-slate-600">{cvData.title}</p>
         <p class="mx-auto mb-8 max-w-2xl text-slate-500">{cvData.bio}</p>
