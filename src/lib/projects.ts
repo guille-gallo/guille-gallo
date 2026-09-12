@@ -29,7 +29,7 @@ export interface FeaturedProject {
 export const featuredProjects: FeaturedProject[] = [
   {
     repoName: "economia4punto0",
-    vercelUrl: "https://economia4punto0.vercel.app",
+    vercelUrl: "https://www.economia4punto0.com",
     privateRepo: true,
     customDescription:
       "Argentine economics publication rebuilt from WordPress into a SolidStart + Supabase platform: custom admin CMS, live market indicators, comments, newsletter, search and audio reports.",
