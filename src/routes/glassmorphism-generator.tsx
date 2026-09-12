@@ -125,7 +125,7 @@ export default function GlassmorphismGeneratorPage() {
             <div class="mb-2 flex items-start justify-between">
               <h3 class="text-base font-semibold text-slate-900">
                 <a
-                  href="https://github.com/guille-gallo/guille-gallo.github.io"
+                  href="https://github.com/guille-gallo/guille-gallo"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="transition-colors hover:text-blue-600"
@@ -154,7 +154,7 @@ export default function GlassmorphismGeneratorPage() {
                 <span class="rounded-md bg-blue-50 px-2 py-0.5 text-[11px] text-blue-700">solidstart</span>
               </div>
               <a
-                href="https://github.com/guille-gallo/guille-gallo.github.io"
+                href="https://github.com/guille-gallo/guille-gallo"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="ml-auto shrink-0 self-end rounded-lg p-1 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900"
