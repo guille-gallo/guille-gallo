@@ -46,10 +46,10 @@ export interface CVData {
 
 export const cvData: CVData = {
   name: "Guillermo Gallo",
-  title: "Senior Software Developer",
+  title: "Software developer",
   email: "guille.gallo88@gmail.com", // Update with your email
   location: "Barcelona, Spain",
-  bio: "Welcome to my personal website.",
+  bio: "Welcome to my personal website",
   linkedin: "https://www.linkedin.com/in/guillermo-gallo-79481751/", // Update or remove
   github: "https://github.com/guille-gallo",
   website: "https://guille-gallo-github-io.vercel.app",
